@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:ital@0;1&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #DDE6ED;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+
+}
+
+.carousel_main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.carousel_body {
+    text-align: center;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 600px;
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+
+.carousel_image {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+}
+
+.carousel_image::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #11009E;
+    top: -0.25rem;
+    right: -0.5rem;
+    border-radius: 50%;
+  }
+
+.carousel_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    position: relative;
+}
+
+.quote_back {
+    background-color: #11009E;
+    padding: 0.5rem;
+    position: absolute;
+    bottom: 100px;
+    left: 0;
+    color: white;
+    display: flex;
+    border-radius: 50%;
+}
+
+.identification {
+    margin: 0.2rem;
+}
+
+.identification h1{
+    font-weight: 200;
+}
+
+.identification p {
+    color: #11009E;
+}
+
+.text {
+    margin: 0.2rem;
+}
+
+.handle {
+    padding-top: 0.5rem;
+}
+
+.handle button {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #11009E;
+}
+
+.handle button:nth-child(1) {
+    margin-right: 2rem;
+    font-size: 1.5rem;
+}
+
+.handle button:nth-child(2) {
+    font-size: 1.5rem;
+}
+
+.suprise {
+    margin-top: 1.5rem;
+}
+
+.suprise button {
+    background-color: #11009E;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    padding: 0.5rem 1rem;
+}
